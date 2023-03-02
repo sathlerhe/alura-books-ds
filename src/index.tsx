@@ -1,8 +1,8 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React, { FC, HTMLAttributes, ReactNode } from 'react';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
-  children?: ReactChild;
+  children?: ReactNode;
 }
 
 // Please do not use types off of a default export module or else Storybook Docs will suffer.
@@ -18,3 +18,4 @@ export * from './components/AbButton';
 export * from './components/AbCard';
 export * from './components/AbTag';
 export * from './components/AbOptionsGroup';
+export * from './components/AbTextField';
